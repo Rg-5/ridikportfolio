@@ -896,15 +896,6 @@
     }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // Form submit mock
-    function handleSubmit(e) {
-      e.preventDefault();
-      document.getElementById('form-success').style.display = 'block';
-      e.target.reset();
-      setTimeout(() => {
-        document.getElementById('form-success').style.display = 'none';
-      }, 4000);
-    }
   </script>
 
 </body>
